@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +39,7 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+
 /* Toggle */
 
 #icon {
@@ -84,11 +86,11 @@ p {
   fill: black
 }
 
-.btn-cart:hover > .icon-cart {
+.btn-cart:hover>.icon-cart {
   transform: scale(1.2);
 }
 
-.btn-cart:hover > .icon-cart path {
+.btn-cart:hover>.icon-cart path {
   fill: rgb(186, 34, 233);
 }
 
@@ -287,14 +289,14 @@ body {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
 }
 
-#feature .fe-box:hover{
-  box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 
 }
 
@@ -346,14 +348,14 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 20px 20px 30px (0,0,0,0.02);
+  box-shadow: 20px 20px 30px (0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
 }
 
 #product1 .pro:hover {
-  box-shadow: 20px 20px 30px (0,0,0,0.06);
+  box-shadow: 20px 20px 30px (0, 0, 0, 0.06);
 }
 
 #product1 .pro img {
@@ -379,7 +381,7 @@ body {
 
 #product1 .pro .des i {
   font-size: 12px;
-  color: rgb(243,181,25);
+  color: rgb(243, 181, 25);
 }
 
 #product1 .pro .des h4 {
@@ -439,7 +441,7 @@ body {
 #sm-banner {
   display: flex;
   justify-content: space-between;
-  flex-direction : wrap;
+  flex-direction: wrap;
   gap: 0.8%;
 }
 
@@ -480,7 +482,7 @@ body {
   padding-bottom: 15px;
 }
 
-#sm-banner .banner-box:hover button{
+#sm-banner .banner-box:hover button {
   background: green;
   border: 1px solid green;
 }
@@ -569,7 +571,7 @@ body {
   border: 1px solid transparent;
   border-radius: 4px;
   outline: none;
-  border-top-right-radius: 0 ;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
@@ -578,7 +580,7 @@ body {
   color: white;
   white-space: nowrap;
   padding: 5px 5px;
-  border-top-left-radius: 0 ;
+  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
@@ -588,13 +590,13 @@ body {
 
 footer {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-footer .col{
+footer .col {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
 }
@@ -652,7 +654,8 @@ footer .copyright {
   padding: 14px;
 }
 
-#page-header h2,p {
+#page-header h2,
+p {
   text-align: center;
   color: white;
 }
@@ -726,12 +729,13 @@ footer .copyright {
   padding: 14px;
 }
 
-#page .about-header h2,p {
+#page .about-header h2,
+p {
   text-align: center;
   color: white;
 }
 
-#about-head img{
+#about-head img {
   width: 50%;
   height: auto;
 }
@@ -788,7 +792,7 @@ footer .copyright {
   color: white;
 }
 
-#prodetails .single-pro-details input:focus{
+#prodetails .single-pro-details input:focus {
   outline: none;
 }
 
@@ -856,7 +860,7 @@ footer .copyright {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-} 
+}
 
 #cart-add #coupon {
   width: 50%;
@@ -873,7 +877,7 @@ footer .copyright {
   outline: none;
   width: 60%;
   margin-right: 10px;
-  border: 1px solid black ;
+  border: 1px solid black;
 }
 
 /*Subtotal */
@@ -889,7 +893,7 @@ footer .copyright {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 20px;
-} 
+}
 
 #subtotal table td {
   width: 50%;
@@ -899,116 +903,74 @@ footer .copyright {
 }
 
 /* Add to Cart Button */
-.oho {
-  --width: 100px;
-  --height: 25px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 50px;
-  --button-color: green;
-  --tooltip-color: #fff;
-  width: var(--width);
-  height: var(--height);
-  flex-direction: column;
-  background: var(--button-color);
-  position: relative;
-  text-align: center;
-  border-radius: 0.45em;
-  font-family: "Arial";
-  transition: background 0.3s;
-}
 
-.oho::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #555;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: .25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
-}
-
-.oho::after {
-  position: relative;
-  content: '';
-  width: 0;
-  height: auto;
-  border: 10px solid transparent;
-  border-top-color: #555;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-.oho::after,.oho::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.text {
-  display: flex;
+.ohio {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.button-wrapper,.text,.icon {
+  gap: 15px;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
   overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.ohio:hover {
+  background: white;
+  color: rgb(33, 0, 85);
+}
+
+.ohio:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  top: 0;
   left: 0;
-  color: #fff;
-}
-
-.text {
-  top: 0
-}
-
-.text,.icon {
-  transition: top 0.5s;
-}
-
-.icon {
-  color: black;
-  top: 100%;
-  width: 100%;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
-.icon svg {
-  width: 100%;
-  height: auto;
+.hoverEffect div {
+  background: white;
+  background: linear-gradient(90deg,
+      rgba(222, 0, 75, 1) 0%,
+      rgba(191, 70, 255, 1) 49%,
+      rgba(0, 212, 255, 1) 100%);
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
 }
 
-.oho:hover {
-  background: green;
+.ohio:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
 }
 
-.oho:hover .text {
-  top: -100%;
-}
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
 
-.oho:hover .icon {
-  top: 0;
-}
-
-.oho:hover:before,.oho:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.oho:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-.oho:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Cart Button */
@@ -1059,12 +1021,10 @@ footer .copyright {
   position: absolute;
   width: 100px;
   height: 100%;
-  background-image: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0) 70%
-  );
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
   top: 0;
   left: -100px;
   opacity: 0.6;
@@ -1092,6 +1052,7 @@ footer .copyright {
   .section-p1 {
     padding: 40px 40px;
   }
+
   #navbar {
     display: none;
     flex-direction: column;
@@ -1115,20 +1076,21 @@ footer .copyright {
     right: 20px;
     font-size: 24px;
     cursor: pointer;
-}
+  }
 
-#navbar.active #close {
-  display: block;
-}
+  #navbar.active #close {
+    display: block;
+  }
 
 
   #navbar .active {
-  display: flex;
+    display: flex;
   }
 
   #navbar li {
     margin-bottom: 25px;
   }
+
   #mobile {
     display: flex;
     justify-content: space-between;
@@ -1152,6 +1114,7 @@ footer .copyright {
   #feature {
     justify-content: center;
   }
+
   #feature .fe-box {
     margin: 15px 15px;
   }
@@ -1163,8 +1126,8 @@ footer .copyright {
 
 @media (max-width: 477px) {
   #header {
-    padding: 10px 30px ;
-  } 
+    padding: 10px 30px;
+  }
 
   h1 {
     font-size: 38px;
@@ -1223,7 +1186,7 @@ footer .copyright {
   #newsletter {
     padding: 40px 20px;
   }
-  
+
   #newsletter .form {
     width: 100%;
   }
@@ -1233,7 +1196,7 @@ footer .copyright {
   }
 
   /* Single Product */
-  #prodetails{
+  #prodetails {
     display: flex;
     flex-direction: column;
   }
