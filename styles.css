@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'HVFlorentino';
+    src: url('fonts/HV_Florentino_Regular.ttf') format('truetype');
+
+}
+body
+{
+margin: 0;
+  overflow: hidden; 
+  height: 100vh;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: url('2.jpg');
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*
+.logo img
+{
+    height: 50px;
+}
+    */
+
+
+/* Text and Spacing of the navbar */
+.nav-left ul li {
+    display: inline-block;
+    padding: 2px 60px;
+    position: double;
+}
+
+.nav-left ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'HVFlorentino', sans-serif;
+
+
+}
+
+
+.nav-right ul li {
+    display: inline-block;
+    padding: 2px 60px;
+    position: double;
+}
+
+.nav-right ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'HVFlorentino', serif;
+
+
+}
+/* Logo */ 
+.title a {
+    display: inline;
+    padding: 2px 6px;
+    position: double;
+    color: black;
+    font-size: 23px;
+    font-family: 'HVFlorentino', serif;
+    text-decoration: none;
+
+}
+
+
+/* Animations of the navbar */
+.nav-left ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.nav-left ul li:hover::after {
+
+    width: 100%;
+
+}
+
+.nav-right ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.nav-right ul li:hover::after {
+
+    width: 100%;
+
+}
+
+.image-one img
+{
+    width :40%;
+    padding-top: 100px;
+    padding-left: 100px;
+    height : 70%;
+}
