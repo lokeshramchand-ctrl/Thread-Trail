@@ -129,7 +129,7 @@ nav {
 }
 
 .text-stack p {
-    top: 50%;
+    top: 40%;
     left: 35%;
     right: 0%;
     position: absolute;
@@ -140,6 +140,7 @@ nav {
 }
 
 .line hr {
+    gap: 0.5rem;
     width: 80%;
     border: 1px solid black;
     position: absolute;
@@ -179,6 +180,7 @@ nav {
     text-decoration: none;
 }
 
+<<<<<<< main
 .about-text h1
 {
     top: -25%;
@@ -191,3 +193,111 @@ nav {
     text-decoration: none;
     font-weight: lighter;
 }
+=======
+/* Discover option */
+
+.disc {
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    left: 10%;
+    right: 5%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    --primary-color: black;
+    --hovered-color: grey;
+    position: absolute;
+    display: flex;
+    font-weight: 600;
+    font-size: 10px;
+    gap: 0.5rem;
+    font-family:'HVFlorentino', serif ;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  /* Button Text */
+  .disc p {
+    margin: 0;
+    position: relative;
+    font-size: 10px;
+    color: var(--primary-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  
+  
+  /* Hover Text Effect */
+  .disc p::before {
+    position: absolute;
+    content: "Discover";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  /* Hover Effects */
+  .disc:hover::after {
+    width: 100%;
+  }
+  
+  .disc:hover p::before {
+    width: 100%;
+  }
+  
+  .disc:hover svg {
+    transform: translateX(6px);
+    stroke: var(--hovered-color);
+  }
+  
+  /* SVG (Arrow) */
+ .disc svg {
+    stroke: var(--primary-color);
+    transition: 0.3s;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Scroll down */
+  .box {
+    position: absolute;
+    top: 120%;
+    right: 0%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+  }
+
+  .box span {
+    display: block;
+    width: 20px;
+    height: 16px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+  }
+
+  .box1 {
+    position: absolute;
+    top: 120%;
+    right: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+  }
+
+  .box1 span {
+    display: block;
+    width: 20px;
+    height: 16px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+  }
+  
+>>>>>>> main
