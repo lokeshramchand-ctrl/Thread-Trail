@@ -179,7 +179,20 @@ nav {
     text-decoration: none;
 }
 
-.about-text h1
+.about-text p
+{
+    top: 30%;
+    left: 60%;
+    right: 0%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'HVFlorentino', serif;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.about-heading h1
 {
     top: -25%;
     left: 0%;
