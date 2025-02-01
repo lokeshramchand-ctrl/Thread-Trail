@@ -154,7 +154,7 @@ nav {
     margin-right: 10px;
     margin-left: 70px;
     margin-top: 170px;
-    width: 250px;
+    width: 450px;
     height: 500px;
 
 }
@@ -170,7 +170,7 @@ nav {
 }
 
 .text-two p {
-    top: 30%;
+    top: 40%;
     left: 35%;
     right: 0%;
     position: absolute;
@@ -180,6 +180,20 @@ nav {
     text-decoration: none;
 }
 
+<<<<<<< main
+.about-text h1
+{
+    top: -25%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 160px;
+    font-family: 'HVFlorentino', serif;
+    text-decoration: none;
+    font-weight: lighter;
+}
+=======
 /* Discover option */
 
 .disc {
@@ -286,3 +300,4 @@ nav {
     margin: -10px;
   }
   
+>>>>>>> main
