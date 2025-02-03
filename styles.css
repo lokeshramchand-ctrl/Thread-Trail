@@ -85,7 +85,6 @@ nav {
 }
 
 
-/* Animations of the navbar */
 .nav-left ul li::after {
     content: '';
     width: 0%;
@@ -180,7 +179,6 @@ nav {
     text-decoration: none;
 }
 
-<<<<<<< main
 .about-text p
 {
     top: 30%;
@@ -194,8 +192,6 @@ nav {
     font-weight: lighter;
 }
 
-.about-heading h1
-=======
 .about-text h1
 {
     top: -25%;
@@ -208,8 +204,6 @@ nav {
     text-decoration: none;
     font-weight: lighter;
 }
-=======
-/* Discover option */
 
 .disc {
     justify-content: center;
@@ -315,4 +309,3 @@ nav {
     margin: -10px;
   }
   
->>>>>>> main
