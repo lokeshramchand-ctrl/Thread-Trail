@@ -179,7 +179,6 @@ nav {
     text-decoration: none;
 }
 
-<<<<<<< main
 .about-text p
 {
     top: 30%;
@@ -193,8 +192,6 @@ nav {
     font-weight: lighter;
 }
 
-.about-heading h1
-=======
 .about-text h1
 {
     top: -25%;
@@ -207,9 +204,6 @@ nav {
     text-decoration: none;
     font-weight: lighter;
 }
-<<<<<<< HEAD
-=======
-/* Discover option */
 
 .disc {
     justify-content: center;
@@ -315,6 +309,3 @@ nav {
     margin: -10px;
   }
   
->>>>>>> main
-=======
->>>>>>> 6e4b2bc (Feb1st)
